@@ -2,6 +2,7 @@ programa
 {
   funcao inicio() 
   {
+    //funcao calculo_segundo_niver(inteiro Niver_Filho_Mes)
     cadeia aniversariante
     inteiro Niver_Pai[3], Niver_Filho[3], opcao
     inteiro Niver_Pai_Dia, Niver_Filho_Dia, Niver_Pai_Mes, Niver_Filho_Mes
@@ -11,8 +12,8 @@ programa
     inteiro Dia_Pai, Dia_Filho, Mes_Pai, Mes_Filho
     inteiro opcao_Pai = 0, opcao_Filho = 0 
 
-    inteiro x_Pai
-    inteiro controle_Pai 
+    inteiro x_Pai = 0
+    inteiro controle_Pai =0
     inteiro DIAS_Pai = 0, res_Pai = 0
 
     inteiro opcao_Pai, opcao_Filho
@@ -85,7 +86,46 @@ programa
       x_Pai = Niver_Pai_Mes
       controle_Pai = Niver_Filho_Mes
 
-      Mes_Filho = calculo_segundo_niver(inteiro Niver_Filho_Mes) 
+      //opcao_Filho = Niver_Filho_Mes
+      escolha(Niver_Filho_Mes)
+      {
+        caso 1: 
+          Mes_Filho = JAN - Niver_Filho_Dia
+          pare
+        caso 2: 
+          Mes_Filho = FEV - Niver_Filho_Dia
+          pare
+        caso 3: 
+          Mes_Filho = MAR - Niver_Filho_Dia
+          pare
+        caso 4: 
+          Mes_Filho = ABR - Niver_Filho_Dia
+          pare
+        caso 5: 
+          Mes_Filho = MAI - Niver_Filho_Dia
+          pare
+        caso 6: 
+          Mes_Pai = JUN - Niver_Filho_Dia
+          pare
+        caso 7: 
+          Mes_Filho = JUL - Niver_Filho_Dia
+          pare
+        caso 8: 
+          Mes_Filho = AGO - Niver_Filho_Dia
+          pare
+        caso 9: 
+          Mes_Filho = SET - Niver_Filho_Dia
+          pare
+        caso 10: 
+          Mes_Filho = OUT - Niver_Filho_Dia
+          pare
+        caso 11: 
+          Mes_Filho = NOV - Niver_Filho_Dia
+          pare
+        caso 12: 
+          Mes_Filho = DEZ - Niver_Filho_Dia
+          pare
+      }  
       
       para (x_Pai; x_Pai<=controle_Pai; x_Pai++)
       {
@@ -100,47 +140,4 @@ programa
   }
 }
 
-funcao calculo_segundo_niver(inteiro Niver_Filho_Mes)
-{
-  opcao_Filho = Niver_Filho_Mes
-  escolha(opcao_Filho)
-  {
-    caso 1: 
-      Mes_Filho = JAN - Niver_Filho_Dia
-      pare
-    caso 2: 
-      Mes_Filho = FEV - Niver_Filho_Dia
-      pare
-    caso 3: 
-      Mes_Filho = MAR - Niver_Filho_Dia
-      pare
-    caso 4: 
-      Mes_Filho = ABR - Niver_Filho_Dia
-      pare
-    caso 5: 
-      Mes_Filho = MAI - Niver_Filho_Dia
-      pare
-    caso 6: 
-      Mes_Pai = JUN - Niver_Filho_Dia
-      pare
-    caso 7: 
-      Mes_Filho = JUL - Niver_Filho_Dia
-      pare
-    caso 8: 
-      Mes_Filho = AGO - Niver_Filho_Dia
-      pare
-    caso 9: 
-      Mes_Filho = SET - Niver_Filho_Dia
-      pare
-    caso 10: 
-      Mes_Filho = OUT - Niver_Filho_Dia
-      pare
-    caso 11: 
-      Mes_Filho = NOV - Niver_Filho_Dia
-      pare
-    caso 12: 
-      Mes_Filho = DEZ - Niver_Filho_Dia
-      pare
-  }  
 
-}
