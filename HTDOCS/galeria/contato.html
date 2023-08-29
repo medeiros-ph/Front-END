@@ -3,52 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJETO 2 | Contato</title>
+    <title>PROJETO 2 | Contatos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" >
 </head>
+
 <body>
-     <!-- Início Menu -->
-     <table border="2" width="80%">
-        <!-- <tr> table row-->
+     <!--menu -->
+     <table  width="80%">
         <tr>
-            <!-- <td> criando colunas Home | Photos | etc-->
             <td>
-                <a href="./index.html" target="_self">
-                    <img src="./assets/logo/logo.png" width="64" height="64">
-                </a>
+                <a href="index.html" target="_self">LOGO</a>
             </td>
             <td>
-                <a href="index.html" target="_self">
-                    Home
-                </a>
+                <a href="index.html" target="_self">Home</a>
             </td>
             <td>
-                <a href="fotos.html" target="_self">
-                    Fotos
-                </a>
+                <a href="fotos.html" target="_self">Fotos</a>
             </td>
             <td>
-                <a href="videos.html" target="_self">
-                    Vídeos
-                </a>
+                <a href="videos.html" target="_self">Vídeos</a>
+            </td>
+            <td> <a href="#" target="_self">Contatos</a></td>
+        </tr>
+    </table>
+    
+    <!-- fim menu -->
+    <!--formulario-->
+    <p>
+        <form name=form1 id=form1 method="POST">
+         
+        <table>
+            <tr>
+                <td><label>Nome</label></td>
+                <td> <input type="text" placeholder="Digite o seu nome completo"></td>
+            </tr>
+            <tr>
+                <td> <label>Tel</label></td>
+                <td> <input type="tel" placeholder="Informe o seu numero de telefone"></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" placeholder="Informe o seu endereco de e-mail"></td>
+            </tr>
+            <tr>
+                <td><label>Usuário</label></td>
+                <td><input type="text" placeholder="Informe o seu nome de usuario"></td>
+            </tr>
+            <tr>
+                <td><label>Senha</label></td>
+                <td><input type="password" placeholder="Entre com a sua senha"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>  <input type="button" value="ENVIAR"></td>
+                <td>
+                    <button class="btn btn-danger">ENVIAR</button>
+                    <button class="btn btn-success">ENVIAR</button>
+                    <button class="btn btn-primary">ENVIAR</button>
+                    <button class="btn btn-info">ENVIAR</button>
+                </td>
+            </tr>
+        </table>
+    </form> 
+    </p>
+    <!--fim formulario-->
+    <!-- rodapé -->
+    <table border="1" width="80%" id="rodape">
+        <tr>
+            <td>
+                SEÇÃO 01
             </td>
             <td>
-                <a href="#" target="_self">
-                    Contato
-                </a>
+                SEÇÃO 02
+            </td>
+            <td>
+                SEÇÃO 03
             </td>
         </tr>
     </table>
-    <!-- Fim do Menu -->
-    
-    <!-- Início Rodapé -->
-    <table border="2" width="80%">
-        <tr>
-            <td>SEÇÂO 01</td>
-            <td>SEÇÂO 02</td>
-            <td>SEÇÂO 03</td>
-        </tr>
-    </table>
-    <!-- Fim Rodapé  -->    
-    
+    <!--fim rodapé -->
 </body>
 </html>
