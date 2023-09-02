@@ -2567,6 +2567,12 @@ fieldset:disabled a.btn {
   border-color: #007bff;
 }
 
+.btn-roxo {
+  color: #fff;
+  background-color: #3b6797;
+  border-color: #3b6797;
+}
+
 .btn-primary:hover {
   color: #fff;
   background-color: #0069d9;
@@ -4368,6 +4374,7 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  margin-bottom: 20px;
 }
 
 .navbar .container,
@@ -6845,6 +6852,27 @@ button.bg-danger:focus {
 
 .bg-light {
   background-color: #f8f9fa !important;
+  margin-bottom: 10px;
+}
+
+.bg-verde {
+  background-color: #0d683a !important;
+  margin-bottom: 10px;
+}
+
+.bg-vermelho {
+  background-color: #664003 !important;
+  margin-bottom: 10px;
+}
+
+.bg-azul {
+  background-color: #062d97 !important;
+  margin-bottom: 10px;
+}
+
+.bg-amarelo {
+  background-color: #4ad10c !important;
+  margin-bottom: 10px;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -10329,4 +10357,6 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+
 /*# sourceMappingURL=bootstrap.css.map */
